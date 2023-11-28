@@ -8,12 +8,21 @@ const rl = readline.createInterface({
 
 let input = [];
 
+// rl.on("line", (line) => {
+//   input = line.split(" ").map((el) => +el);
+//   rl.close();
+// });
+
+// rl.on("close", () => {
+//   const a = +input[0];
+//   const b = +input[1];
+//   console.log(a + b);
+//   process.exit();
+// });
+
 rl.on("line", (line) => {
   input = line.split(" ").map((el) => +el);
-  rl.close();
-});
-
-rl.on("close", () => {
+}).on("close", () => {
   const a = +input[0];
   const b = +input[1];
   console.log(a + b);
