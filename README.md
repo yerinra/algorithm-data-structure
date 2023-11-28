@@ -2,7 +2,7 @@
 
 #### 예시는 [1000번](https://www.acmicpc.net/problem/1000) 문제
 
-### 👾 readline
+### 👾 readline (권장)
 
 <pre>
 const readline = require("readline");
@@ -20,9 +20,9 @@ rl.on("line", (line) => {
 
 rl.on("close", () => {
     // 코드 작성
-  const A = +input[0];
-  const B = +input[1];
-  console.log(A + B);
+  const a = +input[0];
+  const b = +input[1];
+  console.log(a + b);
   process.exit();
 });
 </pre>
