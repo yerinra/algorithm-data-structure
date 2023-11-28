@@ -5,6 +5,18 @@
 ### 👾 readline (권장)
 
 <pre>
+rl.on("line", (line) => {
+  input = line.split(" ").map((el) => +el);
+}).on("close", () => {
+  const a = +input[0];
+  const b = +input[1];
+  console.log(a + b);
+  process.exit();
+});
+</pre>
+
+<pre>
+// or...
 const readline = require("readline");
 const rl = readline.createInterface({
   input: process.stdin,
