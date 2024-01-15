@@ -1,3 +1,8 @@
+`dataStructure`
+
+- 선형/비선형 자료구조 이론 정리
+- 제로베이스 강의 내용 정리입니다.
+
 # Node.js로 백준 알고리즘 문제풀기
 
 #### 예시는 [1000번](https://www.acmicpc.net/problem/1000) 문제
