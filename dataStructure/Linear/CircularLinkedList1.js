@@ -5,23 +5,23 @@ function Node(data) {
 }
 
 // head와 length 를 가지고 있는 객체
-function CirculatLinkedList() {
+function CircularLinkedList() {
   this.head = null;
   this.length = 0;
 }
 
 // 연결 리스트 내 노드 개수 확인
-CirculatLinkedList.prototype.size = function () {
+CircularLinkedList.prototype.size = function () {
   return this.length;
 };
 
 // 객체 내 노드 존재 여부 파악
-CirculatLinkedList.prototype.isEmpty = function () {
+CircularLinkedList.prototype.isEmpty = function () {
   return this.length === 0;
 };
 
 /* TC */
-let cll = new CirculatLinkedList();
+let cll = new CircularLinkedList();
 let node;
 console.log(cll);
 
