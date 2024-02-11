@@ -6,7 +6,7 @@ class Node {
   }
 }
 
-class Dequeue {
+class Deque {
   constructor() {
     this.head = null;
     this.tail = null;
