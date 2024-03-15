@@ -73,6 +73,7 @@ HashTable.prototype.getBuffer = function () {
   return array;
 };
 
+// 데이터셋 출력
 HashTable.prototype.print = function () {
   for (let i = 0; i < this.table.length; i++) {
     if (this.table[i]) {
