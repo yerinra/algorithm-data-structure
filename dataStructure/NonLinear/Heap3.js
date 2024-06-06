@@ -94,6 +94,26 @@ Heap.prototype.bubbleDown = function () {
   }
 };
 
+/*this.rightChild(index) !== undefined를 추가하여 오른쪽 자식 노드가 존재하는지 확인하고, 존재할 경우에만 비교를 수행하도록 조건을 수정 */
+Heap.prototype.bubbleDown_v2 = function () {
+  let index = 0;
+  while (
+    this.leftChild(index) !== undefined &&
+    (this.leftChild(index) < this.items[index] ||
+      this.rightChild(index) < this.items[index])
+  ) {
+    let targetIndex = this.leftChildIndex(index);
+    if (
+      this.rightChild(index) !== undefined &&
+      this.rightChild(index) < this.items[targetIndex]
+    ) {
+      targetIndex = this.rightChildIndex(index);
+    }
+    this.swap(targetIndex, index);
+    index = targetIndex;
+  }
+};
+
 // TC
 let minHeap = new Heap();
 minHeap.insert(90);
